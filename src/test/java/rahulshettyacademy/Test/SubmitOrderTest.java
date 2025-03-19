@@ -37,6 +37,8 @@ public class SubmitOrderTest extends BaseTest{
 		ConfirmationPage conf = po.placeorder();
 		String Endmessage = conf.sucessfull();
 		Assert.assertTrue(Endmessage.equalsIgnoreCase("Thankyou for the order."));
+		System.out.println("SubmitOrderpage");
+		
 	}
 	@Test(dependsOnMethods={"Submiorder"})
 	public void orderHistoryTest()
