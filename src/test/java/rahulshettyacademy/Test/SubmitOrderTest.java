@@ -38,6 +38,8 @@ public class SubmitOrderTest extends BaseTest{
 		String Endmessage = conf.sucessfull();
 		Assert.assertTrue(Endmessage.equalsIgnoreCase("Thankyou for the order."));
 		System.out.println("SubmitOrderpage");
+		System.out.println("Hello");
+		
 		
 	}
 	@Test(dependsOnMethods={"Submiorder"})
